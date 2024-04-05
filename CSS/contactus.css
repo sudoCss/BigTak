@@ -1,0 +1,97 @@
+.contact-us .container .special-heading {
+    margin: auto;
+}
+
+.contact-us {
+    margin-bottom: 40px;
+}
+
+.contact-us .container .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us .container .content .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-us .container .content .row2 {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+}
+
+@media (max-width:767px) {
+    .contact-us .container .content .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-us .container .content .row2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.contact-us .container .content .row .box {
+    padding: 20px;
+    background-color: var(--box-color);
+    line-height: 1.4;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.contact-us .container .content .row1 .box .info1 {
+    margin-bottom: 20px;
+}
+
+.contact-us .container .content .row .box i {
+    margin-right: 5px;
+    color: var(--main-color);
+    font-size: 18px;
+}
+
+.contact-us .container .content .row .box .info1 h4 {
+    display: inline;
+    letter-spacing: -1px;
+}
+
+.fa-phone {
+    animation: hzaz 1s  infinite;
+    -webkit-animation: hzaz 1s  infinite;
+}
+
+@keyframes hzaz {
+    0%{
+        transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+}
+50%{
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+}
+
+75% {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+100% {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+}
